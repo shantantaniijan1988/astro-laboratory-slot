@@ -1,0 +1,17 @@
+---
+import Button from "./Button.astro";
+---
+
+<div class="button-list">
+  <Button title={ `ボタン 1` } />
+  <Button title={ `ボタン 2` } />
+  <Button title={ `ボタン 3` } />
+</div>
+
+<style>
+  .button-list {
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+  }
+</style>

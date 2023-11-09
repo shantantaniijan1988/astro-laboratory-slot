@@ -1,0 +1,17 @@
+---
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+import ButtonList from "./ButtonList.astro";
+---
+
+<div class="content-wrapper wrapper">
+  <Header />
+  <slot name="before" />
+  <ButtonList />
+  <!-- <slot>
+    <p>これは、スロットに渡された子要素がない場合の代替コンテンツです。</p>
+  </slot> -->
+  <slot />
+  <slot name="after" />
+  <Footer />
+</div>

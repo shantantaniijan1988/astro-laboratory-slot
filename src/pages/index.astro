@@ -1,0 +1,29 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Wrapper from "../components/Wrapper.astro";
+
+const pageTitle = "ホーム";
+---
+
+<PageLayout title={ pageTitle }>
+  <Wrapper>
+    <p slot="before">これはslot="before"属性を持ったテキストです</p>
+    <p slot="after">これはslot="after"属性を持ったテキストです</p>
+    <p>その他のテキストです。これはslot="name"属性を持たない要素です</p>
+    <a href="/">こちらもslot="name"属性をもたないリンクです</a>
+  </Wrapper>
+</PageLayout>
+
+<style lang="scss">
+  @use "../styles/colors" as *;
+  @use "../styles/mixins" as *;
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+</style>

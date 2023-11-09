@@ -1,0 +1,24 @@
+@use "mixins" as *;
+@use "colors" as *;
+@use "reset" as *;
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: $color-text;
+}
+
+.wrapper {
+  width: 1024px;
+  max-width: 100%;
+  padding: 4rem 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper .button-list {
+  margin-top: 4rem;
+}
+
+.wrapper .footer {
+  margin-top: 4rem;
+}
